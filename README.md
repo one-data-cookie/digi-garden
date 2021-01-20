@@ -1,6 +1,6 @@
 # Notenote.link
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7b37d412-1240-44dd-8539-a7001465b57a/deploy-status)](https://app.netlify.com/sites/notenotelink/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/afab686c-cd81-4eea-ba75-2efdf5d7b8ff/deploy-status)](https://app.netlify.com/sites/onedatacookie-digigarden/deploys)
 
 ## Update !
 
