@@ -8,6 +8,8 @@ layout: stylesheet
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&display=swap');
 @import "/assets/css/highlight.css";
 /* Containers: Body, Container, Box, Main, Header, Content */ 
 
@@ -16,7 +18,93 @@ html {
 }
 
 body {
-    counter-reset: sidenote-counter; 
+    counter-reset: sidenote-counter;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
+.sidebar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 270px;
+    height: 100%;
+    padding: 40px 40px;
+    background-color: #202020;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+    margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+    font-size: 25px;
+    color: #fff;
+    font-family: "PT Sans", serif;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+    text-decoration: underline;
+}
+
+.about {
+    margin: 0 0 40px;
+    height: 250px;
+    text-align: left;
+}
+
+.about .author-name {
+    font-family: "Playfair Display", serif;
+    margin: 0 0 10px;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 52px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.about .author-name a:hover,
+.about .author-name a:focus {
+    text-decoration: underline;
+}
+
+.about p {
+    font-family: "PT Sans", serif;
+    font-size: 23px;
+    margin: 0 0 10px;
+    color: #858585;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+hr.contact-line {
+    background-color: #858585;
+    justify-content: center;
+    margin-top: 100%;
+    width: 75%;
+}
+
+.contact {
+    color: #fff;
+    justify-content: center;
+    display: flex;
 }
 
 .container {
@@ -26,7 +114,7 @@ body {
     justify-content: center;
     position: absolute;
     top: 0px;  
-    left: 0px;
+    left: 350px;
     right: 0px;
     bottom: 0px;  
     align-items: center;       
@@ -372,58 +460,22 @@ hr {
     padding-left: 15px;
 }
 
-.home, .categories, .rss, .projects {
-    padding-left: 5px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    vertical-align: middle;
-    display: inline-block;
-    justify-content: center;
-    border-right: 1px solid #f7f7f7;
-    color: #555555; 
-}
-
-.rss, .categories {
-    padding-left: 14px;
-    padding-right: 20px;
-}
-
-.home {
-    padding-right: 14px;
-}
-
-.home-p, .categories-p, .rss-p, .projects-p {
-   margin-top: auto;
-   margin-left: auto;
-   text-align: center;
-   font-weight: 600;
-   font-size: 0.7rem; 
-   font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-   color: #555555; 
-}
-
-.icon-home, .icon-category, .icon-projects, .icon-rss {
+.icon-email, .icon-linkedin, .icon-twitter {
     margin-top: 7px;
     justify-content: center;
     stroke: #555555;
 }
 
 
-.icon-home {
-    margin-left: 21%;
+.icon-email {
 }
 
-.icon-category {
-    margin-left: 21%;
+.icon-linkedin {
+    margin-left: 25px;
 }
 
-.icon-projects {
-    margin-left: 30%;
-}
-
-.icon-rss {
-    margin-left: 10%;
+.icon-twitter {
+    margin-left: 25px;
 }
 
 /* Notes: Note-heading, Note-subheading, Notes-content, Related Notes */
@@ -632,13 +684,14 @@ hr {
     padding-left: 50px;
     box-sizing : border-box;
     width: 100%;
-    height: 40px;
+    height: 60px;
     border: 0px;
     font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
     color: #555;
     font-size: 18px;
     border-bottom: 1px solid #f7f7f7;
     background-color: #f7f7f7;
+    margin-bottom: 60px;
 }
 
 ::placeholder {
@@ -652,7 +705,7 @@ hr {
     margin-top: -2px;
     padding-left: 20px;
     color: #888; 
-    padding-top: 12.5px;
+    padding-top: 20px;
     z-index: 1;
 }
   

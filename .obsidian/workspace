@@ -4,13 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "b23f65d61763aeda",
+        "id": "c0cf90c548ac0d59",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "assets/img/new notes pref.png"
+            "file": "README.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/img/new notes pref.png",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "README.md",
+    "index.md",
+    "dates.md",
+    "about.md",
     "assets/img/new notes pref.png",
     "assets/img/fork_button.jpg",
     "assets/img/favicon.png",
     "_notes/How to use the special features.md",
     "_notes/how-markdown-is-rendered.md",
-    "_notes/How-to-setup-this-site.md",
-    "_notes/Obsidian integration.md",
-    "tags.md",
-    "README.md",
-    "notes.md"
+    "_notes/How-to-setup-this-site.md"
   ]
 }

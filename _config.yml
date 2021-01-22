@@ -1,4 +1,4 @@
-title: Digital Garden of One Data Cookie
+title: One Data Cookie | DigiGarden
 name: My linked notebook
 user_description: onedatacookie-digigarden
 notes_url: "https://onedatacookie-digigarden.netlify.app/"
@@ -8,6 +8,14 @@ copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://onedatacookie-digigarden.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
+
+# Author Settings
+somevizes: https://onedatacookie-somevizes.netlify.app/
+social-github: one-data-cookie
+social-medium: one-data-cookie
+social-email: kolacek.m@gmail.com
+social-linkedin: kolacekm
+social-twitter: kolacekm
 
 # Build settings
 theme: null
