@@ -2,7 +2,7 @@
 ---
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     {% include analytics.html %}
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -43,26 +43,26 @@
 
 <body>
 
-
-
-    <div class="container">                    
+    <div class="container">
         <div class = "box">
-            {%- include header.html -%}
-            {%- include feed.html -%}
+            {%- include header.html -%}  
+            <div class = "content-box">
+                {%- include feed.html -%}
 
-            {%- if page.content-type == "notes" 
-                or page.content-type == "post" 
-                or page.content-type == "eg" -%}
-            <main>
-                <h1>{{page.title}}</h1>
-                {%- include content.html -%}
-                <hr>
-                {%- include backlinks.html -%}
-                {%- include related.html -%}
-            </main>
-            {%- endif -%}
-            {%- include comments.html -%}
-            {%- include footer.html -%}
+                {%- if page.content-type == "notes" 
+                    or page.content-type == "post" 
+                    or page.content-type == "eg" -%}
+                <main>
+                    <h1>{{page.title}}</h1>
+                    {%- include content.html -%}
+                    <hr>
+                    {%- include backlinks.html -%}
+                    {%- include related.html -%}
+                </main>
+                {%- endif -%}
+                {%- include comments.html -%}
+                {%- include footer.html -%}
+            </div class = "content-box">
         </div>
         <button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
     </div>

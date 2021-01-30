@@ -41,15 +41,10 @@ body {
     left: 0;
     bottom: 0;
     width: 270px;
-    height: 100%;
     padding: 40px 40px;
     background-color: #202020;
 }
 
-/* Sidebar nav */
-.sidebar-nav {
-    margin-bottom: 1rem;
-}
 .sidebar-nav-item {
     display: block;
     line-height: 1.75;
@@ -64,7 +59,7 @@ a.sidebar-nav-item:focus {
 
 .about {
     margin: 0 0 40px;
-    height: 250px;
+    height: 55%;
     text-align: left;
 }
 
@@ -86,7 +81,7 @@ a.sidebar-nav-item:focus {
 .about p {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 23px;
-    margin: 0 0 10px;
+    margin: 0 0 25px;
     color: #858585;
     text-align: left;
     line-height: 1.5;
@@ -95,8 +90,10 @@ a.sidebar-nav-item:focus {
 hr.contact-line {
     background-color: #858585;
     justify-content: center;
-    margin-top: 100%;
+    margin-top: 40px;
     width: 75%;
+    height: 1px;
+    border-width: 0px;
 }
 
 .contact {
@@ -131,7 +128,7 @@ hr.contact-line {
 }
 
 header {
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
@@ -1417,13 +1414,7 @@ width: 30% !important;
     }
 }
 
-
-
 @media screen and (max-width: 800px){
-
-.box {
-    width: 80%;
-}
 
 label {
     cursor: pointer; 
@@ -1463,6 +1454,50 @@ label.margin-toggle:not(.sidenote-number) {
     position: relative !important; 
     padding-bottom: 10px;
 }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .container {
+    left: 0px;
+  }
+  .content-box {
+    padding: 40px;
+  }
+  .sidebar {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    width: auto;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+            box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+  }
+  .sidebar footer {
+    margin-bottom: 10px;
+  }
+  .about {
+    max-width: 500px;
+    margin: 10px auto auto;
+  }
+  .sidebar-nav-item {
+    max-width: 500px;
+    margin: 10px auto auto;
+  }
+  .searchbar input[type="text"] {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 500px){
