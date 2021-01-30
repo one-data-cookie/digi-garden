@@ -17,6 +17,9 @@ social-email: kolacek.m@gmail.com
 social-linkedin: kolacekm
 social-twitter: kolacekm
 
+# Tracker
+analytics: G-1GBW6FF82H # Google Analytics
+
 # Build settings
 theme: null
 plugins:
