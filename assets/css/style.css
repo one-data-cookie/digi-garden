@@ -92,7 +92,7 @@ hr.contact-line {
     justify-content: center;
     margin-top: 40px;
     width: 75%;
-    height: 1px;
+    height: 0.5px;
     border-width: 0px;
 }
 
@@ -686,7 +686,7 @@ hr {
     font-size: 18px;
     border-bottom: 1px solid #f7f7f7;
     background-color: #f7f7f7;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 ::placeholder {
@@ -1461,8 +1461,14 @@ label.margin-toggle:not(.sidenote-number) {
   .container {
     left: 0px;
   }
+  .box {
+    width: 100%;
+    max-width: 100% !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
   .content-box {
-    padding: 40px;
+    padding: 20px;
   }
   .sidebar {
     position: relative;
@@ -1498,15 +1504,22 @@ label.margin-toggle:not(.sidenote-number) {
   .searchbar input[type="text"] {
     margin-bottom: 0px;
   }
+  blockquote {
+    padding: 5px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+  }
+
+  cite {
+    padding-left: 20px;
+  }
+
+  blockquote p {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 500px){
-.box {
-    width: 100%;
-    max-width: 100% !important;
-    border-left: none !important;
-    border-right: none !important;
-}
 .related-wrapper {
     grid-template-columns: repeat(1, 1fr);
 }
