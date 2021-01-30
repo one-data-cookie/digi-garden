@@ -36,6 +36,7 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
 
+include: ["_pages"]
 
 sass:
   style: compressed
