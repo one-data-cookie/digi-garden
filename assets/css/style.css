@@ -254,7 +254,7 @@ pre code {
     word-wrap: break-word !important;       
     padding: 15px 15px  15px 15px;
     vertical-align:middle;
-    width: 90%;
+    width: 80%;
     background-color: #f7f7f7;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
@@ -1504,12 +1504,15 @@ label.margin-toggle:not(.sidenote-number) {
   .searchbar input[type="text"] {
     margin-bottom: 0px;
   }
+  main {
+    margin-left: 10px;
+    padding-right: 10px;
+  }
   blockquote {
     padding: 5px;
     margin-inline-start: 15px;
     margin-inline-end: 15px;
   }
-
   cite {
     padding-left: 20px;
   }
