@@ -1,5 +1,4 @@
 title: One Data Cookie | DigiGarden
-name: My linked notebook
 user_description: One sweet path through the data world.
 notes_url: "https://onedatacookie-digigarden.netlify.app/"
 profile_pic: /assets/img/profile.png
@@ -10,6 +9,7 @@ url: "https://onedatacookie-digigarden.netlify.app/" # the base hostname & proto
 encoding: utf-8
 
 # Author Settings
+author: Michal Koláček
 somevizes: https://onedatacookie-somevizes.netlify.app/
 social-github: one-data-cookie
 social-medium: one-data-cookie
