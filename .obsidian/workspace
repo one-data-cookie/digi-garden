@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Changing Encoding of Czech Spatial Files.md",
+            "file": "_notes/Data Analysis Workflow.md",
             "mode": "source"
           }
         },
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Changing Encoding of Czech Spatial Files.md",
+            "file": "_notes/Data Analysis Workflow.md",
             "mode": "preview"
           }
         },
@@ -82,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Changing Encoding of Czech Spatial Files.md",
+                "file": "_notes/Data Analysis Workflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Changing Encoding of Czech Spatial Files.md",
-    "_notes/Checklist for Before Publishing.md",
-    "_notes/Checklist for Understanding Data.md",
-    "_notes/Choosing the Right Font.md",
     "_notes/Data Analysis Workflow.md",
-    "_notes/Finding a Dataset.md",
     "_notes/Learning Data.md",
     "_notes/Learning Tableau.md",
+    "_notes/Tools for Data Visualisation.md",
+    "_notes/Tools for Python.md",
     "_notes/Running Python in Cloud.md",
-    "_notes/Tools for Data Visualisation.md"
+    "_notes/Checklist for Understanding Data.md",
+    "_notes/Checklist for Before Publishing.md",
+    "_notes-old/Obsidian integration.md",
+    "assets/src/data-analysis-workflow.png"
   ]
 }
