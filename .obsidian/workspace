@@ -10,10 +10,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Checklist for Understanding Data.md",
+            "file": "_notes/Changing Encoding of Czech Spatial Files.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "0117fd4c0481abad"
+      },
+      {
+        "id": "ac057c09fadfff94",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_notes/Changing Encoding of Czech Spatial Files.md",
+            "mode": "preview"
+          }
+        },
+        "group": "0117fd4c0481abad"
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Checklist for Understanding Data.md",
+                "file": "_notes/Changing Encoding of Czech Spatial Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,15 +99,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Checklist for Understanding Data.md",
+    "_notes/Changing Encoding of Czech Spatial Files.md",
     "_notes/Checklist for Before Publishing.md",
-    "_notes-old/How to use the special features.md",
-    "_notes/How to Change Encoding of Czech Spatial Files.md",
-    "_pages/dates.md",
-    "_pages/about.md",
-    "_notes/Tools – Designing.md",
-    "_notes-old/how-markdown-is-rendered.md",
-    "_notes-old/How-to-setup-this-site.md",
-    "_notes-old/Obsidian integration.md"
+    "_notes/Checklist for Understanding Data.md",
+    "_notes/Choosing the Right Font.md",
+    "_notes/Data Analysis Workflow.md",
+    "_notes/Finding a Dataset.md",
+    "_notes/Learning Data.md",
+    "_notes/Learning Tableau.md",
+    "_notes/Running Python in Cloud.md",
+    "_notes/Tools for Data Visualisation.md"
   ]
 }
