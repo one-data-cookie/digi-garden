@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "_notes/Checklist for Understanding Data.md",
             "mode": "source"
           }
         }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 458
   },
   "right": {
     "id": "d90d2a57d4a20602",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "_notes/Checklist for Understanding Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "README.md",
-    "index.md",
-    "dates.md",
-    "about.md",
-    "assets/img/new notes pref.png",
-    "assets/img/fork_button.jpg",
-    "assets/img/favicon.png",
-    "_notes/How to use the special features.md",
-    "_notes/how-markdown-is-rendered.md",
-    "_notes/How-to-setup-this-site.md"
+    "_notes/Checklist for Understanding Data.md",
+    "_notes/Checklist for Before Publishing.md",
+    "_notes-old/How to use the special features.md",
+    "_notes/How to Change Encoding of Czech Spatial Files.md",
+    "_pages/dates.md",
+    "_pages/about.md",
+    "_notes/Tools – Designing.md",
+    "_notes-old/how-markdown-is-rendered.md",
+    "_notes-old/How-to-setup-this-site.md",
+    "_notes-old/Obsidian integration.md"
   ]
 }

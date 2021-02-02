@@ -5,8 +5,7 @@ permalink: /about/
 content-type: eg
 ---
 
-<img src="{{ site.favicon }}" alt="One Data Cookie" style="width:100px" align="middle" />
-$= \beta_0 + \beta_1 \times Data + \beta_2 \times Education + \beta_3 \times Events + \epsilon$
+<img src="{{ site.favicon }}" alt="One Data Cookie" style="width:100px" align="middle" />$= \beta_0 + \beta_1 \times Data + \beta_2 \times Education + \beta_3 \times Events + \epsilon$
 
 ---
 

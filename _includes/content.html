@@ -4,11 +4,13 @@
     {%- if page.etat != nil and page.etat != empty -%}
     <li><a href="javascript:void(0)" class="tag"><b>État:</b> <i>{{page.etat | capitalize}}</i></a></li>
     {%- endif -%}
+    <li><a class="tag"><b>{{ page.category }}</b></a></li>
     <!-- Loop through page categories and print them in tags -->
     {%- if page.tags != empty and page.tags !=nil -%}
     {%- for tag in page.tags -%}
-    <li><a href="/tags/#{{ tag }}" class="tag">{{ tag }}</a></li>
+    <li><a href="/tags/#{{ tag }}" style="margin-left: 5px" class="tag">{{ tag }}</a></li>
     {%- endfor -%}
+    <li><a class="tag"><i>{{ page.season }}</i></a></li>
     {%- endif -%}
 </ul>
 {%- endif -%}
