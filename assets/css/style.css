@@ -45,6 +45,10 @@ body {
     background-color: #202020;
 }
 
+.sidebar-small {
+    display: none;
+}
+
 .sidebar-nav-item {
     display: block;
     line-height: 1.75;
@@ -1471,6 +1475,9 @@ label.margin-toggle:not(.sidenote-number) {
     padding: 20px;
   }
   .sidebar {
+    display: none;
+  }
+  .sidebar-small {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1489,8 +1496,13 @@ label.margin-toggle:not(.sidenote-number) {
     width: auto;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    background-color: #202020;
+    padding: 40px 40px;
+    top: 0;
+    left: 0;
+    bottom: 0;
   }
-  .sidebar footer {
+  .sidebar-small footer {
     margin-bottom: 10px;
   }
   .about {
