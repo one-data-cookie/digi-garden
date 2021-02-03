@@ -14,7 +14,7 @@ Keep in mind that this is *not* a blog. As it is the case for most of gardens, i
 -   `summer` – very solid and happy about it
 -   `autumn` – needs some rewriting so not visible
 
-If you are interested in the backend of things, this is a customised version of [notenote.link](https://github.com/Maxence-L/notenote.link), which is a fork of [simply-jekyll](https://github.com/raghuveerdotnet/simply-jekyll) optimised for integration with [Obsidian](https://obsidian.md/). Feel free to check out the full source code on [my GitHub](https://github.com/one-data-cookie/digi-garden).
+If you'd like to know more about the backend of things, this is a customised version of [notenote.link](https://github.com/Maxence-L/notenote.link), which is a fork of [simply-jekyll](https://github.com/raghuveerdotnet/simply-jekyll) optimised for integration with [Obsidian](https://obsidian.md/). Feel free to check out the full source code on [my GitHub](https://github.com/one-data-cookie/digi-garden).
 
 # About Me
 I, **Data Storyteller**.\\
@@ -25,5 +25,7 @@ Constantly developing myself and having been actively involved in several educat
 
 I, **Events Enthusiast**.\\
 Helping increase audience interaction at [Slido](https://www.slido.com/) and having led teams to organise numerous events, I believe in their power to shift mindsets through impactful experience.
+
+---
 
 *Interested in more and/or up for a chat? Then drop me a line on my [LinkedIn](https://linkedin.com/in/{{ site.social-linkedin }}) (or anywhere else)!*
