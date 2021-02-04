@@ -210,7 +210,6 @@ b, strong {
     font-weight: 600;
 }
 
-
 /* Figures, Images, Code, Blockquotes, Tables */
 
 img {
@@ -221,14 +220,12 @@ img {
 
 code {
     font-family: Consolas, 'Courier New', Courier, monospace;
-    font-family: Consolas, 'Courier New', Courier, monospace;
     display: inline-block;
     overflow: auto !important;
-    white-space: pre ;
+    white-space: pre;
     word-wrap: break-word !important;       
-    padding: 2px 2px  2px 2px;
-    vertical-align:middle;
     padding: 2px 2px 2px 2px;
+    vertical-align: middle;
     border: 1px solid #e9e9e9;
     border-radius: 4px;
 }
@@ -254,11 +251,11 @@ pre code {
     font-family: Consolas, 'Courier New', Courier, monospace;
     display: inline-block;
     overflow: auto !important;
-    white-space: pre ;
+    white-space: pre;
     word-wrap: break-word !important;       
-    padding: 15px 15px  15px 15px;
-    vertical-align:middle;
-    width: 85%;
+    padding: 15px 15px 15px 15px;
+    vertical-align: middle;
+    width: calc(100% - 30px);
     background-color: #f7f7f7;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
@@ -701,7 +698,7 @@ hr {
 .searchbar i {
     position: absolute;
     vertical-align: middle;
-    margin-top: -2px;
+    margin-top: 0px;
     padding-left: 20px;
     color: #888; 
     padding-top: 20px;
@@ -1054,7 +1051,7 @@ label.srs-toggle {
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
-    word-wrap:break-word;
+    word-wrap: break-word;
     font-size: 20px;
 }
 
@@ -1472,7 +1469,7 @@ label.margin-toggle:not(.sidenote-number) {
     border-right: none !important;
   }
   .content-box {
-    padding: 20px;
+    padding: 30px;
   }
   .sidebar {
     display: none;
@@ -1515,6 +1512,10 @@ label.margin-toggle:not(.sidenote-number) {
   }
   .searchbar input[type="text"] {
     margin-bottom: 0px;
+    padding-left: 70px;
+  }
+  .searchbar i {
+    padding-left: 40px;
   }
   main {
     margin-left: 10px;
