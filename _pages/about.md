@@ -6,7 +6,7 @@ content-type: eg
 ---
 
 # About DigiGarden
-**DigiGarden** is my personal digital garden – place for putting links, drafts, ideas; currently concering anything related to the field of *data*.
+**DigiGarden** is my personal digital garden – place for putting links, drafts, ideas; currently concerning anything related to the field of *data*.
 
 Keep in mind that this is *not* a blog. As it is the case for most of gardens, it's never finished, only loosely tended, and evolves with time. To distinguish notes maturity though, they are marked by *season*:
 -   `winter` – just started
