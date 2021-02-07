@@ -1,9 +1,9 @@
-_syncing
-_site
+_syncing/
+_site/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
 .idea
 .DS_Store
-.obsidian
+.obsidian/
