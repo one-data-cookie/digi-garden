@@ -1,7 +1,7 @@
 ---
 layout: post
-title: By Tags
-permalink: /tags/
+title: By Seasons
+permalink: /seasons/
 content-type: eg
 ---
 
@@ -18,14 +18,16 @@ content-type: eg
 </style>
 
 <main>
-    {% assign tags = site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
-    {% for tag in tags %}
-        <h3 id="{{ tag }}">{{ tag | captalize }}</h3>
+    {% assign seasons = site.notes | map: 'season' | join: ' '  | split: ' ' | uniq %}
+    {% for season in seasons %}
+        {% if season != "autumn" %}
+        <h3 id="{{ season }}">{{ season | captalize }}</h3>
         {%- for note in site.notes -%}
-            {%- if note.tags contains tag -%}
+            {%- if note.season == season -%}
                 <li style="padding-bottom: 0.6em; list-style: none;"><a href="{{note.url}}">{{ note.title }}</a></li>
             {%- endif -%}
         {%- endfor -%}
+        {%- endif -%}
     {%- endfor -%}
     <br/>
     <br/>

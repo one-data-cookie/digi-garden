@@ -1,7 +1,7 @@
 ---
 layout: post
-title: By Tags
-permalink: /tags/
+title: By Categories
+permalink: /categories/
 content-type: eg
 ---
 
@@ -18,11 +18,11 @@ content-type: eg
 </style>
 
 <main>
-    {% assign tags = site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
-    {% for tag in tags %}
-        <h3 id="{{ tag }}">{{ tag | captalize }}</h3>
+    {% assign categories = site.notes | map: 'category' | join: ' '  | split: ' ' | uniq %}
+    {% for category in categories %}
+        <h3 id="{{ category }}">{{ category | captalize }}</h3>
         {%- for note in site.notes -%}
-            {%- if note.tags contains tag -%}
+            {%- if note.category == category -%}
                 <li style="padding-bottom: 0.6em; list-style: none;"><a href="{{note.url}}">{{ note.title }}</a></li>
             {%- endif -%}
         {%- endfor -%}

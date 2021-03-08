@@ -1,17 +1,25 @@
 <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 {%- if page.content-type == "notes" -%}
 <ul class="tags">
+
     {%- if page.etat != nil and page.etat != empty -%}
     <li><a href="javascript:void(0)" class="tag"><b>État:</b> <i>{{page.etat | capitalize}}</i></a></li>
     {%- endif -%}
-    <li><a class="tag"><b>{{ page.category }}</b></a></li>
-    <!-- Loop through page categories and print them in tags -->
-    {%- if page.tags != empty and page.tags !=nil -%}
+
+    {%- if page.category != empty and page.category != nil -%}
+    <li><a href="/categories/#{{ page.category }}" style="margin-left: 5px" class="tag"><b>{{ page.category }}</b></a></li>
+    {%- endif -%}
+
+    {%- if page.tags != empty and page.tags != nil -%}
     {%- for tag in page.tags -%}
     <li><a href="/tags/#{{ tag }}" style="margin-left: 5px" class="tag">{{ tag }}</a></li>
     {%- endfor -%}
-    <li><a class="tag"><i>{{ page.season }}</i></a></li>
     {%- endif -%}
+
+    {%- if page.season != empty and page.season != nil and page.season != "autumn" -%}
+    <li><a href="/seasons/#{{ page.season }}" style="margin-left: 5px" class="tag"><i>{{ page.season }}</i></a></li>
+    {%- endif -%}
+
 </ul>
 {%- endif -%}
 
