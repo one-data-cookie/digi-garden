@@ -1,9 +1,9 @@
 
 
 {%- if page.permalink == "/" -%}
-    {% assign seasons = site.notes | map: 'season' | join: ' '  | split: ' ' | uniq %}
+    {% assign seasons = "summer, spring, winter" | split: ', ' %}
     {% for season in seasons %}
-        {% assign categories = site.notes | map: 'category' | join: ' '  | split: ' ' | uniq %}
+        {% assign categories = site.notes | map: 'category' | join: ' '  | split: ' ' | uniq | sort %}
         {% for category in categories %}
             {%- for item in site.notes -%}
                 {%- if item.season == season and item.season != "autumn" and item.category == category %}
