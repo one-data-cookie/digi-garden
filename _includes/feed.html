@@ -1,56 +1,28 @@
 
 
 {%- if page.permalink == "/" -%}
-    {%- for item in site.notes -%}
-        {%- if item.season == 'summer' -%}
-        <div class="feed-title-excerpt-block disable-select" data-url="{{site.url}}{{item.url}}">
-            <a href="{{item.url}}" style="text-decoration: none; color: #555555;">
-                <p style="margin-top: 20px; margin-bottom: 15px;" class="feed-title">{{ item.title }}</p>
-                <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 100}}</p>
-                <ul style="padding-left: 20px; margin-top: 0px; margin-bottom: 20px" class="tags">
-                    <li style="padding: 0 5px; border-radius: 10px;" class="tag"><b>{{item.category}}</b></li>
-                    {%- for tag in item.tags -%}
-                        <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag">{{ tag }}</li>
-                    {%- endfor -%}
-                    <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag"><i>{{ item.season }}</i></li>
-                </ul>
-            </a>
-        </div>
-        {%- endif -%}
-    {%- endfor -%}
-    {%- for item in site.notes -%}
-        {%- if item.season == 'spring' -%}
-        <div class="feed-title-excerpt-block disable-select" data-url="{{site.url}}{{item.url}}">
-            <a href="{{item.url}}" style="text-decoration: none; color: #555555;">
-                <p style="margin-top: 20px; margin-bottom: 15px;" class="feed-title">{{ item.title }}</p>
-                <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 100}}</p>
-                <ul style="padding-left: 20px; margin-top: 0px; margin-bottom: 20px" class="tags">
-                    <li style="padding: 0 5px; border-radius: 10px;" class="tag"><b>{{item.category}}</b></li>
-                    {%- for tag in item.tags -%}
-                        <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag">{{ tag }}</li>
-                    {%- endfor -%}
-                    <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag"><i>{{ item.season }}</i></li>
-                </ul>
-            </a>
-        </div>
-        {%- endif -%}
-    {%- endfor -%}
-    {%- for item in site.notes -%}
-        {%- if item.season == 'winter' -%}
-        <div class="feed-title-excerpt-block disable-select" data-url="{{site.url}}{{item.url}}">
-            <a href="{{item.url}}" style="text-decoration: none; color: #555555;">
-                <p style="margin-top: 20px; margin-bottom: 15px;" class="feed-title">{{ item.title }}</p>
-                <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 100}}</p>
-                <ul style="padding-left: 20px; margin-top: 0px; margin-bottom: 20px" class="tags">
-                    <li style="padding: 0 5px; border-radius: 10px;" class="tag"><b>{{item.category}}</b></li>
-                    {%- for tag in item.tags -%}
-                        <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag">{{ tag }}</li>
-                    {%- endfor -%}
-                    <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag"><i>{{ item.season }}</i></li>
-                </ul>
-            </a>
-        </div>
-        {%- endif -%}
+    {% assign seasons = site.notes | map: 'season' | join: ' '  | split: ' ' | uniq %}
+    {% for season in seasons %}
+        {% assign categories = site.notes | map: 'category' | join: ' '  | split: ' ' | uniq %}
+        {% for category in categories %}
+            {%- for item in site.notes -%}
+                {%- if item.season == season and item.season != "autumn" and item.category == category %}
+                <div class="feed-title-excerpt-block disable-select" data-url="{{site.url}}{{item.url}}">
+                    <a href="{{item.url}}" style="text-decoration: none; color: #555555;">
+                        <p style="margin-top: 20px; margin-bottom: 15px;" class="feed-title">{{ item.title }}</p>
+                        <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 100}}</p>
+                        <ul style="padding-left: 20px; margin-top: 0px; margin-bottom: 20px" class="tags">
+                            <li style="padding: 0 5px; border-radius: 10px;" class="tag"><b>{{item.category}}</b></li>
+                            {%- for tag in item.tags -%}
+                                <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag">{{ tag }}</li>
+                            {%- endfor -%}
+                            <li style="padding: 0 5px; border-radius: 10px; margin-left: 5px" class="tag"><i>{{ item.season }}</i></li>
+                        </ul>
+                    </a>
+                </div>
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endfor -%}
     {%- endfor -%}
 {%- endif -%}
 
@@ -64,4 +36,3 @@
 </div>
 {%- endfor -%}
 {%- endif -%}
-
